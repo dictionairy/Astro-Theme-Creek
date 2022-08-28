@@ -11,7 +11,7 @@ interface MarkdownFrontmatter {
 
 const title = 'DICTIONAIRI';
 const description = 'Explore AI art from A to Z';
-const seoDescription = 'Creek is a theme for Astro static site generator';
+const seoDescription = 'Explore AI art from A to Z';
 
 const allPosts = await Astro.glob<MarkdownFrontmatter>('./posts/*.md');
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
